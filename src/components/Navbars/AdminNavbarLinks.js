@@ -153,8 +153,8 @@ export default function HeaderLinks(props) {
             <MenuItem borderRadius="8px" mb="10px">
               <ItemContent
                 time="2 days ago"
-                info="by Josh Henry"
-                boldInfo="New Album"
+                info="from Josh Henry"
+                boldInfo="New Message"
                 aName="Josh Henry"
                 aSrc={avatar2}
               />
@@ -162,7 +162,7 @@ export default function HeaderLinks(props) {
             <MenuItem borderRadius="8px">
               <ItemContent
                 time="3 days ago"
-                info="Payment succesfully completed!"
+                info="Transaction completed!"
                 boldInfo=""
                 aName="Kara"
                 aSrc={avatar3}

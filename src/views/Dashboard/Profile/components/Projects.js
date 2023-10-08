@@ -11,9 +11,9 @@ import {
 import avatar2 from "assets/img/avatars/avatar2.png";
 import avatar4 from "assets/img/avatars/avatar4.png";
 import avatar6 from "assets/img/avatars/avatar6.png";
-import imageArchitect1 from "assets/img/ImageArchitect1.png";
-import imageArchitect2 from "assets/img/ImageArchitect2.png";
-import imageArchitect3 from "assets/img/ImageArchitect3.png";
+import imageArchitect1 from "assets/img/mansion.jpg";
+import imageArchitect2 from "assets/img/condo.jpg";
+import imageArchitect3 from "assets/img/italy.jpg";
 // Custom components
 import Card from "components/Card/Card";
 import CardBody from "components/Card/CardBody";
@@ -45,28 +45,28 @@ const Projects = ({ title, description }) => {
           gap='24px'>
           <ProjectCard
             image={imageArchitect1}
-            name={"Project #1"}
-            category={"Modern"}
+            name={"$Mansion"}
+            category={"Ocenfront Mansion"}
             description={
-              "As Uber works through a huge amount of internal management turmoil."
+              "This beautiful home has a 20,000 gallon aquarium and 200 feet of private beachfront."
             }
             avatars={[avatar2, avatar4, avatar6]}
           />
           <ProjectCard
             image={imageArchitect2}
-            name={"Project #2"}
-            category={"Scandinavian"}
+            name={"$Condo"}
+            category={"Chicago Condo"}
             description={
-              "Music is something that every person has his or her own specific opinion about."
+              "An upscale condo with great access to the city's best amenities."
             }
             avatars={[avatar4, avatar2, avatar6, avatar4]}
           />
           <ProjectCard
             image={imageArchitect3}
-            name={"Project #3"}
-            category={"Minimalist"}
+            name={"$Festa"}
+            category={"Festa Italiana"}
             description={
-              "Different people have different taste, especially various types of music."
+              "Different people have different taste, but everyone loves a good Italian meal."
             }
             avatars={[avatar2, avatar4, avatar6]}
           />
@@ -80,7 +80,7 @@ const Projects = ({ title, description }) => {
             <Flex direction='column' justifyContent='center' align='center'>
               <Icon as={FaPlus} fontSize='lg' mb='12px' />
               <Text fontSize='lg' fontWeight='bold'>
-                Create a New Project
+                Create a New Asset
               </Text>
             </Flex>
           </Button>

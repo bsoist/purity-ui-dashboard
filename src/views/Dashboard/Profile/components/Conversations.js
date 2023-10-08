@@ -42,7 +42,7 @@ const Conversations = ({ title }) => {
               />
               <Flex direction='column'>
                 <Text fontSize='sm' color={textColor} fontWeight='bold'>
-                  Sophie B.{" "}
+                  Marco D.{" "}
                 </Text>
                 <Text fontSize='xs' color='gray.500' fontWeight='400'>
                   Hi! I need more information...
@@ -70,10 +70,10 @@ const Conversations = ({ title }) => {
               />
               <Flex direction='column'>
                 <Text fontSize='sm' color={textColor} fontWeight='bold'>
-                  Sophie B.{" "}
+                  Estelle M.{" "}
                 </Text>
                 <Text fontSize='xs' color='gray.500' fontWeight='400'>
-                  Awesome work, can you change...
+                  Thank you!
                 </Text>
               </Flex>
             </Flex>
@@ -98,7 +98,7 @@ const Conversations = ({ title }) => {
               />
               <Flex direction='column'>
                 <Text fontSize='sm' color={textColor} fontWeight='bold'>
-                  Sophie B.{" "}
+                  Maria S.{" "}
                 </Text>
                 <Text fontSize='xs' color='gray.500' fontWeight='400'>
                   Have a great afternoon...
@@ -129,7 +129,7 @@ const Conversations = ({ title }) => {
                   Sophie B.{" "}
                 </Text>
                 <Text fontSize='xs' color='gray.500' fontWeight='400'>
-                  About files I can...
+                  I have a question...
                 </Text>
               </Flex>
             </Flex>
@@ -154,7 +154,7 @@ const Conversations = ({ title }) => {
               />
               <Flex direction='column'>
                 <Text fontSize='sm' color={textColor} fontWeight='bold'>
-                  Sophie B.{" "}
+                  Alex K.{" "}
                 </Text>
                 <Text fontSize='xs' color='gray.500' fontWeight='400'>
                   About files I can...

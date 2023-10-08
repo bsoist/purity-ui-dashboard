@@ -4,7 +4,7 @@ import { Box, Flex, Grid, Icon } from "@chakra-ui/react";
 import BackgroundCard1 from "assets/img/BackgroundCard1.png";
 import { MastercardIcon, VisaIcon } from "components/Icons/Icons";
 import React from "react";
-import { FaPaypal, FaWallet } from "react-icons/fa";
+import { FaPaypal, FaWallet, FaUserAlt, FaUsers } from "react-icons/fa";
 import { RiMastercardFill } from "react-icons/ri";
 import {
   billingData,
@@ -34,8 +34,8 @@ function Billing() {
             gap='26px'>
             <CreditCard
               backgroundImage={BackgroundCard1}
-              title={"Purity UI"}
-              number={"7812 2139 0823 XXXX"}
+              title={"PNC Mastercard"}
+              number={"5412 2139 0823 XXXX"}
               validity={{
                 name: "VALID THRU",
                 data: "05/24",
@@ -54,37 +54,37 @@ function Billing() {
               }
             />
             <PaymentStatistics
-              icon={<Icon h={"24px"} w={"24px"} color='white' as={FaWallet} />}
-              title={"Salary"}
-              description={"Belong interactive"}
-              amount={2000}
+              icon={<Icon h={"24px"} w={"24px"} color='white' as={FaUserAlt} />}
+              title={"You"}
+              description={"Your activity"}
+              amount={20.00}
             />
             <PaymentStatistics
-              icon={<Icon h={"24px"} w={"24px"} color='white' as={FaPaypal} />}
-              title={"Paypal"}
-              description={"Freelance Payment"}
-              amount={4550}
+              icon={<Icon h={"24px"} w={"24px"} color='white' as={FaUsers} />}
+              title={"Your Club"}
+              description={"Total club activity"}
+              amount={45.50}
             />
           </Grid>
           <PaymentMethod
-            title={"Payment Method"}
+            title={"Payment Methods"}
             mastercard={{
               icon: <MastercardIcon w='100%' h='100%' />,
-              number: "7812 2139 0823 XXXX",
+              number: "5412 2139 0823 XXXX",
             }}
             visa={{
               icon: <VisaIcon w='100%' h='100%' />,
-              number: "7812 2139 0823 XXXX",
+              number: "4212 2139 0823 XXXX",
             }}
           />
         </Box>
-        <Invoices title={"Invoices"} data={invoicesData} />
+        <Invoices title={"Prices"} data={invoicesData} />
       </Grid>
       <Grid templateColumns={{ sm: "1fr", lg: "1.6fr 1.2fr" }}>
         <BillingInformation title={"Billing Information"} data={billingData} />
         <Transactions
           title={"Your Transactions"}
-          date={"23 - 30 March"}
+          date={"23 - 30 September"}
           newestTransactions={newestTransactions}
           olderTransactions={olderTransactions}
         />

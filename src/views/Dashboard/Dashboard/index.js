@@ -13,7 +13,7 @@ import BarChart from "components/Charts/BarChart";
 import LineChart from "components/Charts/LineChart";
 // Custom icons
 import {
-  CartIcon,
+  ClockIcon,
   DocumentIcon,
   GlobeIcon,
   WalletIcon,
@@ -35,56 +35,35 @@ export default function Dashboard() {
     <Flex flexDirection='column' pt={{ base: "120px", md: "75px" }}>
       <SimpleGrid columns={{ sm: 1, md: 2, xl: 4 }} spacing='24px'>
         <MiniStatistics
-          title={"Today's Moneys"}
-          amount={"$53,000"}
-          percentage={55}
+          title={"My Money"}
+          amount={"$5,453,000"}
+          percentage={20}
           icon={<WalletIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
         />
         <MiniStatistics
-          title={"Today's Users"}
-          amount={"2,300"}
-          percentage={5}
+          title={"Club's Money"}
+          amount={"214,456,300"}
+          percentage={45.5}
           icon={<GlobeIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
         />
         <MiniStatistics
-          title={"New Clients"}
-          amount={"+3,020"}
-          percentage={-14}
+          title={"New Members"}
+          amount={"+8"}
+          percentage={14}
           icon={<DocumentIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
         />
         <MiniStatistics
-          title={"Total Sales"}
+          title={"Today's Transactions"}
           amount={"$173,000"}
           percentage={8}
-          icon={<CartIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
+          icon={<ClockIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
         />
       </SimpleGrid>
       <Grid
         templateColumns={{ md: "1fr", lg: "1.8fr 1.2fr" }}
         templateRows={{ md: "1fr auto", lg: "1fr" }}
-        my='26px'
+        my='12px'
         gap='24px'>
-        <BuiltByDevelopers
-          title={"Built by Developers"}
-          name={"Purity UI Dashboard"}
-          description={
-            "From colors, cards, typography to complex elements, you will find the full documentation."
-          }
-          image={
-            <Image
-              src={logoChakra}
-              alt='chakra image'
-              minWidth={{ md: "300px", lg: "auto" }}
-            />
-          }
-        />
-        <WorkWithTheRockets
-          backgroundImage={peopleImage}
-          title={"Work with the rockets"}
-          description={
-            "Wealth creation is a revolutionary recent positive-sum game. It is all about who takes the opportunity first."
-          }
-        />
       </Grid>
       <Grid
         templateColumns={{ sm: "1fr", lg: "1.3fr 1.7fr" }}
@@ -92,12 +71,12 @@ export default function Dashboard() {
         gap='24px'
         mb={{ lg: "26px" }}>
         <ActiveUsers
-          title={"Active Users"}
-          percentage={23}
+          title={"Active Members"}
+          percentage={8}
           chart={<BarChart />}
         />
         <SalesOverview
-          title={"Sales Overview"}
+          title={"Overview"}
           percentage={5}
           chart={<LineChart />}
         />
@@ -107,13 +86,13 @@ export default function Dashboard() {
         templateRows={{ sm: "1fr auto", md: "1fr", lg: "1fr" }}
         gap='24px'>
         <Projects
-          title={"Projects"}
+          title={"Network"}
           amount={30}
-          captions={["Companies", "Members", "Budget", "Completion"]}
+          captions={["Clubs", "Members", "Volume", "% of network"]}
           data={dashboardTableData}
         />
         <OrdersOverview
-          title={"Orders Overview"}
+          title={"Overview"}
           amount={30}
           data={timelineData}
         />
